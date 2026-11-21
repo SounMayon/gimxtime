@@ -36,7 +36,7 @@ typedef long long int gtimediff;
 /*
  * gtime format specifier.
  */
-#ifdef WIN32
+#ifdef _MSC_VER
 #define GTIME_FS "%I64u"
 #else
 #define GTIME_FS "%llu"
